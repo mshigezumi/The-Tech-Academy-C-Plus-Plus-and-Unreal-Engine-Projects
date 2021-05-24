@@ -1,7 +1,10 @@
 // OOPChallenges.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#define _USE_MATH_DEFINES
+
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class Dog {
@@ -43,6 +46,45 @@ public:
     }
 };
 
+class Shape {
+public:
+    string color;
+
+    float getArea();
+};
+
+class Rectangle : public Shape {
+public:
+    float height;
+    float width;
+
+    float getArea()
+    {
+        return height * width;
+    }
+};
+
+class Triangle : public Shape {
+public:
+    float base;
+    float height;
+
+    float getArea()
+    {
+        return (height * base) / 2;
+    }
+};
+
+class Circle : public Shape {
+public:
+    float radius;
+
+    float getArea()
+    {
+        return M_PI * pow(radius, 2);
+    }
+};
+
 int main()
 {
     Dog dogObj("Hound", "Brown", 2, 60);
@@ -54,6 +96,29 @@ int main()
     cout << dogObj.color << "\n";
     cout << dogObj.height << "\n";
     cout << dogObj.weight << "\n";
+
+    cout << "\n" << "--" << "\n" << "\n";
+
+    Rectangle rect;
+    rect.height = 10;
+    rect.width = 5;
+    rect.color = "blue";
+    cout << "the " + rect.color + " rectangle has an area of ";
+    cout << rect.getArea() << "\n";
+
+    Triangle tri;
+    tri.base = 10;
+    tri.height = 5;
+    tri.color = "red";
+    cout << "the " + tri.color + " triangle has an area of ";
+    cout << tri.getArea() << "\n";
+
+    Circle cir;
+    cir.radius = 10;
+    cir.color = "purple";
+    cout << "the " + cir.color + " circle has an area of ";
+    cout << cir.getArea() << "\n";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

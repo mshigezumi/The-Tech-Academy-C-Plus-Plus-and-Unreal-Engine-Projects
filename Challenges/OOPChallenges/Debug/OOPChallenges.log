@@ -1,2 +1,3 @@
 ﻿  OOPChallenges.cpp
+C:\Users\Michael\Documents\GitHub\The-Tech-Academy-C-Plus-Plus-and-Unreal-Engine-Projects\Challenges\OOPChallenges\OOPChallenges.cpp(84,21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   OOPChallenges.vcxproj -> C:\Users\Michael\Documents\GitHub\The-Tech-Academy-C-Plus-Plus-and-Unreal-Engine-Projects\Challenges\Debug\OOPChallenges.exe
