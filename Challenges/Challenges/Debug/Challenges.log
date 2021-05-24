@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Challenge1.vcxproj, Challenges.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  BasicChallenges.cpp
+C:\Users\Michael\Documents\GitHub\The-Tech-Academy-C-Plus-Plus-and-Unreal-Engine-Projects\Challenges\Challenges\BasicChallenges.cpp(13,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Challenges.vcxproj -> C:\Users\Michael\Documents\GitHub\The-Tech-Academy-C-Plus-Plus-and-Unreal-Engine-Projects\Challenges\Debug\BasicChallenges.exe
